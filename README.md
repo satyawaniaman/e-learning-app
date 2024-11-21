@@ -2,7 +2,7 @@
 
 Welcome to **Learnly**, a modern e-learning application built with **React**, **Tailwind CSS**, and **Framer Motion** for a seamless and interactive user experience. This platform is designed to provide engaging educational content with smooth animations and a responsive design.
 
-![Learnly Screenshot]("./src/assets/Screenshot 2024-11-21 at 7.12.26 PM.png") <!-- Replace with an actual screenshot -->
+(./src/assets/Screenshot 2024-11-21 at 7.12.26 PM.png)<!-- Replace with an actual screenshot -->
 
 ## 🌟 Features
 
