@@ -1,12 +1,19 @@
 import { PiStudentDuotone } from "react-icons/pi";
-import { NavbarMenu, LuMenu } from "../NavbarMenu";
+import { motion } from "framer-motion";
+import { MdMenu } from "react-icons/md";
+import { NavbarMenu } from "../NavbarMenu";
 import { useState } from "react";
 import ResponsiveMenu from "./ResponsiveMenu";
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
+
   return (
     <>
-      <nav>
+      <motion.div
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 0.5, delay: 0.5 }}
+      >
         <div className="container flex  justify-between item-center py-6">
           {/*logo section*/}
           <div className="text-2xl flex items-center gap-2 font-bold">
@@ -39,16 +46,16 @@ function Navbar() {
           </div>
           {/* mobile hambuger section */}
           <div
-            className="lg:hidden"
+            className="lg:hidden "
             onClick={() => {
               setIsOpen(!isOpen);
             }}
           >
-            <LuMenu className="text-4xl " />
+            <MdMenu className="text-4xl" />
           </div>
         </div>
-      </nav>
-      {/* mobile sidebar section  */}
+      </motion.div>
+      {/* mobile sidebar menu  */}
       <ResponsiveMenu isOpen={isOpen} />
     </>
   );
